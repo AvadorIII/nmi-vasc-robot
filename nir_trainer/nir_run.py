@@ -78,9 +78,9 @@ model.train(model.training_list,
             restart_from = 3000, # restart_from = -1
             epochs = 4001,
             epochs_save = 5, # 2
-            learning_rate = 0.000002, # 0.00001
+            learning_rate = 0.000002,
             loss_type = 'WCE+Dice+MSE+L1',
-            loss_weights = (0.0025, 0.025, 2.5, 2.5, 0.0), # (0.1, 0.4, 0.4, 0.1)
+            loss_weights = (0.1, 0.5, 0.3, 0.1),
             pos_weight = 4.0,
             threshold = 0.5,
             k_composite = (0.5, 0.5, 0.5, 0.5, 0.5),
