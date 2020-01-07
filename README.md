@@ -1,3 +1,5 @@
+# Deep learning robotic guidance for autonomous vascular access, [nature machine intelligence](https://www.nature.com/natmachintell/)
+
 The below code is designed to help users to evaluate the deep learning models described in the paper for near infrared (NIR) and duplex ultrasound (DUS) image processing. Using the code requires basic knowledge of Python programming, Tensorflow, and training deep neural networks to understand the training and evaluation procedures.
 
 ## Dependencies
