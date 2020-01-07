@@ -16,7 +16,7 @@ Numpy
 
 ## Data preparation
 
-Example test data are provided in the folders ```/data/nir_test``` and ```/data/nir_test```. Each directory contains multiple sets of contiguous example test sequences. Individual data are in the form of .mat files, structured as follows:
+Example test data are provided in the folders ```/data/nir_test``` and ```/data/dus_test```. Each directory contains multiple sets of contiguous example test sequences. Individual data are in the form of .mat files, structured as follows:
 
 ```
 /data/nir_test/sequenceX/data_YYYYYY.mat
