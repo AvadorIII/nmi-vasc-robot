@@ -211,9 +211,6 @@ Please cite our paper if you use the data or code
   title={Deep learning robotic guidance for autonomous vascular access},
   author={Chen, Alvin and Balter, Max and Maguire, Timothy and Yarmush, Martin L},
   journal={Nature Machine Intelligence},
-  volume={X},
-  number={X},
-  pages={X},
   year={2020},
   publisher={Nature Publishing Group}
 }
