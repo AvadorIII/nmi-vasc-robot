@@ -206,10 +206,6 @@ def showImagesAsSubplots() # show input and output images as subplots
 def writeOutputsToFile() # write network predictions to specified file path
 ```
 
-## Trainable model checkpoints
-
-Example trainable (not frozen) Tensorflow models may be found in ```/nir_trainer/checkpoints/``` and ```dus_trainer/checkpoints/```.
-
 ## Citation
 Please cite our paper if you use the data or code
 ```
