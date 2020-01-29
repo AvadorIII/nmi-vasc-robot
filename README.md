@@ -1,4 +1,4 @@
-The below code is designed to help users to evaluate the deep learning models described in the paper for segmentation, classification, localization, and tracking of near infrared (NIR) and duplex ultrasound (DUS) image sequences. Using the code requires basic knowledge of Python programming, Tensorflow, and training deep neural networks to understand the training and evaluation procedures.
+This repository contains source code associated with our paper, "Deep learning robotic guidance for autonomous vascular access". Using the code requires basic knowledge of Python programming, Tensorflow, and network training and evaluation procedures.
 
 ## Dependencies
 
@@ -25,12 +25,6 @@ Example test data are provided in the folders ```/data/nir_test``` and ```/data/
   Label_left - WxH left binary segmentation label.
   Label_right - WxH right binary segmentation label.
   Disparity - WxHx1x2 stereo disparity map label.
-  
-/data/dus_test/sequenceX/data_YYYYYY.mat
-  Image_bmode - WxH rectified left NIR stereo image input.
-  Image_doppler - WxHx3 rectified right NIR stereo image input.
-  Label_mask - WxH binary segmentation label.
-  Label_info - Information about the vessel labels, including the vessel class and name.
 ```
 
 Output predictions may be (optionally) written to disk as .png image files.
@@ -64,11 +58,11 @@ relative_path\sequence3\data_000002.mat
 relative_path\sequence3\data_000003.mat
 ```
 
-Every N video sequences should have the same length, where N is equal to the desired training batch size. Separate data lists can be create in this manner to handle training, validation, and testing. Example data lists can be found under ```/nir_trainer/datalists``` and ```/dus_trainer/datalists```.
+Separate data lists can be created to handle training, validation, and testing. Example data lists can be found under ```/nir_trainer/datalists``` and ```/dus_trainer/datalists```.
 
 ```nir_run.py``` and ```dus_run.py``` are the entry points for running the models. These scripts set the relevant paths needed for model training and testing and allow the user to set input parameters that define the model structure and training strategy. For example,
 
-```nir_trainer.py``` and ```dus_trainer.py``` are the main classes that set up the model structure according to the user inputs, build the Tensorflow model graph, create the batches, perform (online) data augmentation, and run the training/test sessions. 
+```nir_trainer.py``` and ```dus_trainer.py``` are the main classes that set up the model structure according to the user inputs, build the Tensorflow model graph, create the batches, perform online data augmentation, and run the training/test sessions. 
 
 The main function definitions within these classes for model training and testing are provided below (along with default input values):
 
