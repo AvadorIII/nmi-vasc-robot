@@ -14,7 +14,7 @@ Numpy
 
 ## Data preparation
 
-Example test data are provided in the folders ```/data/nir_test``` and ```/data/dus_test```. Each directory contains multiple sets of contiguous example test sequences. Individual data are in the form of .mat files, structured as follows:
+Example test data are provided in the folders ```/data/nir_test``` and ```/data/dus_test```. Each directory contains multiple sets of test images. Individual data are in the form of .mat files, structured as follows:
 
 ```
 /data/nir_test/sequenceX/data_YYYYYY.mat
@@ -33,7 +33,7 @@ Output predictions may be (optionally) written to disk as .png image files.
 
 The Python scripts for training the models from scratch are included under ```/nir_trainer``` and ```/dus_trainer```. Both follow a similar set up:
 
-```nir_create_lists.py``` and ```dus_create_lists.py``` parse the data into training, validation, and test splits. The script use a list structure given by
+```nir_setup.py``` and ```dus_setup.py``` parse the data into training, validation, and test splits. The script use a list structure given by
 
 ```
 datalist = [[dataPath1, startingFrameIndex, endingFrameIndex, timeSteps], 
